@@ -16,6 +16,7 @@
 		8C4ACBD02859BC8D00A40B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4ACBCE2859BC8D00A40B8A /* LaunchScreen.storyboard */; };
 		8C4ACBDB2859BC8D00A40B8A /* MyBookLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4ACBDA2859BC8D00A40B8A /* MyBookLibraryTests.swift */; };
 		8C4ACBE62859BC8D00A40B8A /* MyBookLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4ACBE52859BC8D00A40B8A /* MyBookLibraryUITests.swift */; };
+		8C6FDA74285A5F4C00CFE783 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FDA73285A5F4C00CFE783 /* BookData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8C4ACBE12859BC8D00A40B8A /* MyBookLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBookLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4ACBE52859BC8D00A40B8A /* MyBookLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookLibraryUITests.swift; sourceTree = "<group>"; };
 		8C4ACBE72859BC8D00A40B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6FDA73285A5F4C00CFE783 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				8C4ACBCE2859BC8D00A40B8A /* LaunchScreen.storyboard */,
 				8C4ACBD12859BC8D00A40B8A /* Info.plist */,
 				8C4ACBC92859BC8B00A40B8A /* MyBookLibrary.xcdatamodeld */,
+				8C6FDA73285A5F4C00CFE783 /* BookData.swift */,
 			);
 			path = MyBookLibrary;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6FDA74285A5F4C00CFE783 /* BookData.swift in Sources */,
 				8C4ACBCB2859BC8B00A40B8A /* MyBookLibrary.xcdatamodeld in Sources */,
 				8C4ACBC52859BC8B00A40B8A /* ViewController.swift in Sources */,
 				8C4ACBC12859BC8B00A40B8A /* AppDelegate.swift in Sources */,
