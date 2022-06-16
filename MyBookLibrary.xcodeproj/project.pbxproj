@@ -16,7 +16,12 @@
 		8C4ACBD02859BC8D00A40B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4ACBCE2859BC8D00A40B8A /* LaunchScreen.storyboard */; };
 		8C4ACBDB2859BC8D00A40B8A /* MyBookLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4ACBDA2859BC8D00A40B8A /* MyBookLibraryTests.swift */; };
 		8C4ACBE62859BC8D00A40B8A /* MyBookLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4ACBE52859BC8D00A40B8A /* MyBookLibraryUITests.swift */; };
+		8C673A4F285AA64900EC35D0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C673A4E285AA64900EC35D0 /* Helper.swift */; };
+		8C673A54285AA68900EC35D0 /* GoogleBookAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C673A53285AA68900EC35D0 /* GoogleBookAPI.swift */; };
+		8C673A5C285AD5D300EC35D0 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C673A5B285AD5D300EC35D0 /* SearchResultTableViewCell.swift */; };
 		8C6FDA74285A5F4C00CFE783 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FDA73285A5F4C00CFE783 /* BookData.swift */; };
+		8C6FDA82285A857500CFE783 /* MyLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FDA81285A857500CFE783 /* MyLibraryViewController.swift */; };
+		8C6FDA88285A9C3C00CFE783 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FDA87285A9C3C00CFE783 /* SearchResultTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +57,12 @@
 		8C4ACBE12859BC8D00A40B8A /* MyBookLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBookLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4ACBE52859BC8D00A40B8A /* MyBookLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookLibraryUITests.swift; sourceTree = "<group>"; };
 		8C4ACBE72859BC8D00A40B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C673A4E285AA64900EC35D0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		8C673A53285AA68900EC35D0 /* GoogleBookAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBookAPI.swift; sourceTree = "<group>"; };
+		8C673A5B285AD5D300EC35D0 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		8C6FDA73285A5F4C00CFE783 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
+		8C6FDA81285A857500CFE783 /* MyLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryViewController.swift; sourceTree = "<group>"; };
+		8C6FDA87285A9C3C00CFE783 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +113,14 @@
 		8C4ACBBF2859BC8B00A40B8A /* MyBookLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				8C6FDA8F285A9C5C00CFE783 /* Model */,
+				8C6FDA8E285A9C5500CFE783 /* Controller */,
+				8C6FDA8D285A9C4D00CFE783 /* View */,
 				8C4ACBC02859BC8B00A40B8A /* AppDelegate.swift */,
 				8C4ACBC22859BC8B00A40B8A /* SceneDelegate.swift */,
-				8C4ACBC42859BC8B00A40B8A /* ViewController.swift */,
-				8C4ACBC62859BC8B00A40B8A /* Main.storyboard */,
 				8C4ACBCC2859BC8D00A40B8A /* Assets.xcassets */,
 				8C4ACBCE2859BC8D00A40B8A /* LaunchScreen.storyboard */,
 				8C4ACBD12859BC8D00A40B8A /* Info.plist */,
-				8C4ACBC92859BC8B00A40B8A /* MyBookLibrary.xcdatamodeld */,
-				8C6FDA73285A5F4C00CFE783 /* BookData.swift */,
 			);
 			path = MyBookLibrary;
 			sourceTree = "<group>";
@@ -132,6 +141,36 @@
 				8C4ACBE72859BC8D00A40B8A /* Info.plist */,
 			);
 			path = MyBookLibraryUITests;
+			sourceTree = "<group>";
+		};
+		8C6FDA8D285A9C4D00CFE783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C4ACBC62859BC8B00A40B8A /* Main.storyboard */,
+				8C673A5B285AD5D300EC35D0 /* SearchResultTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C6FDA8E285A9C5500CFE783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C4ACBC42859BC8B00A40B8A /* ViewController.swift */,
+				8C6FDA87285A9C3C00CFE783 /* SearchResultTableViewController.swift */,
+				8C6FDA81285A857500CFE783 /* MyLibraryViewController.swift */,
+				8C673A4E285AA64900EC35D0 /* Helper.swift */,
+				8C673A53285AA68900EC35D0 /* GoogleBookAPI.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8C6FDA8F285A9C5C00CFE783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C6FDA73285A5F4C00CFE783 /* BookData.swift */,
+				8C4ACBC92859BC8B00A40B8A /* MyBookLibrary.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,11 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6FDA82285A857500CFE783 /* MyLibraryViewController.swift in Sources */,
 				8C6FDA74285A5F4C00CFE783 /* BookData.swift in Sources */,
 				8C4ACBCB2859BC8B00A40B8A /* MyBookLibrary.xcdatamodeld in Sources */,
 				8C4ACBC52859BC8B00A40B8A /* ViewController.swift in Sources */,
 				8C4ACBC12859BC8B00A40B8A /* AppDelegate.swift in Sources */,
 				8C4ACBC32859BC8B00A40B8A /* SceneDelegate.swift in Sources */,
+				8C673A5C285AD5D300EC35D0 /* SearchResultTableViewCell.swift in Sources */,
+				8C6FDA88285A9C3C00CFE783 /* SearchResultTableViewController.swift in Sources */,
+				8C673A4F285AA64900EC35D0 /* Helper.swift in Sources */,
+				8C673A54285AA68900EC35D0 /* GoogleBookAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
